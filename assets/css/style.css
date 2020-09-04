@@ -3,3 +3,38 @@
 /* md */
 /* sm */
 /* xs */
+.header .header-navbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .header-navbar__name {
+  margin-left: 40px;
+}
+
+.header .header-navbar__links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .header-navbar__links .links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 50px;
+}
+
+.header .header-navbar__links .links .link {
+  padding: 0 10px;
+}
+
+.header .header-homepage {
+  height: 200px;
+  width: 100%;
+  background-color: #19232A;
+}

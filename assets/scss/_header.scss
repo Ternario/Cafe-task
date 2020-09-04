@@ -1,3 +1,29 @@
 .header {
     
+    .header-navbar {
+        display: flex;
+        
+        &__name {
+            margin-left: 40px;
+        }
+
+        &__links {
+            display: flex;
+
+            .links {
+                display: flex;
+                margin-left: 50px;
+                
+                .link {
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+
+    .header-homepage {
+        height: 200px;
+        width: 100%;
+        background-color: $color-gray;
+    }
 }
