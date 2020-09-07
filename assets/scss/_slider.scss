@@ -1,3 +1,120 @@
 .slider {
-    
+    padding-left: 5px;
+
+    .slider-descriptions {
+        margin-top: 50px;
+        margin-bottom: 65px;
+        width: 490px;
+
+        .label {
+            margin-bottom: 28px;
+        }
+
+        .description {
+            line-height: 1.8rem;
+        }
+    }
+
+    .slider-wrapper {
+        display: flex;
+        margin-bottom: 90px;
+
+        @include lg-md {
+            margin-bottom: 60px;
+            flex-wrap: wrap;
+        }
+
+        &__block {
+            position: relative;
+            margin: 0 17px;
+            height: 375px;
+            width: 345px;
+            overflow: hidden;
+            transition: 0.5s;
+
+            .number {
+                position: absolute;
+                top: -97px;
+                left: -38px;
+                font-size: 190px;
+                transition: 0.5s;
+            }
+
+            .title {
+                margin-top: 143px;
+                margin-left: 55px;
+                margin-bottom: 26px;
+                font-size: 18px;
+                transition: 0.5s;
+
+                @include lg-md {
+                    margin-left: 35px;
+                    font-size: 14px;
+                }
+            }
+
+            .description {
+                margin-left: 70px;
+                margin-bottom: 18px;
+                width: 230px;
+                font-size: 13px;
+                line-height: 1.9rem;
+                transition: 0.5s;
+
+                @include lg-md {
+                    margin-left: 55px;
+                    font-size: 12px;
+                }
+            }
+
+            .link {
+                position: relative;
+                margin-left: 70px;
+                font-size: 13px;
+                color: $color-dark-blue;
+                text-decoration: none;
+                transition: 0.5s;
+
+                @include lg-md {
+                    margin-left: 55px;
+                    font-size: 12px;
+                }
+            }
+
+            .link::after {
+                content: "";
+                position: absolute;
+                height: 2px;
+                width: 98%;
+                left: -2px;
+                bottom: -10px;
+                background-color: $color-dark-blue;
+                transition: 0.5s;
+            }
+        }
+
+        &__block:hover {
+            background-color: $color-yellow;
+
+            .number {
+                color: $color-white;
+            }
+
+            .title {
+                color: $color-white;
+            }
+
+            .description {
+                color: $color-white;
+            }
+
+            .link {
+                color: $color-white;
+            }
+
+            .link::after {
+                background-color: $color-white;
+            }
+        }
+    }
 }

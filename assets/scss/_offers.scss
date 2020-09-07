@@ -1,3 +1,123 @@
 .offers {
+    padding-left: 5px;
+    margin-bottom: 60px;
     
+    .offers-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+
+        @include lg-md {
+            display: block;
+        }
+        
+        &__location {
+            margin-top: 80px;
+            margin-bottom: 45px;
+            position: relative;
+
+            @include lg-md {
+                margin-top: 40px;
+            }
+            
+            .location-map {
+                position: relative;
+                height: 330px;
+                width: 540px;
+                background-color: $color-gray;
+
+                @include lg-md {
+                    margin: 0 auto;
+                }
+            }
+
+            .location-title {
+                position: absolute;
+                text-align: center;
+                height: 80px;
+                width: 335px;
+                left: 100px;
+                bottom: -40px;
+                background-color: $color-yellow;
+                line-height: 80px;
+
+                @include lg-md {
+                    left: 30%;
+                }
+
+                .title {
+                    position: relative;
+                }
+
+                .title::before {
+                    content: "";
+                    position: absolute;
+                    height: 30px;
+                    width: 20px;
+                    top: 27px;
+                    left: 40px;
+                    background-image: url(../img/pointer.png);
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+
+        &__info {
+            width: 470px;
+
+            @include xl-lg {
+                width: 430px;
+            }
+
+            @include lg-md {
+                width: 100%;
+            }
+
+            .title {
+                margin-top: 90px;
+                margin-bottom: 28px;
+                font-size: 25px;
+
+                @include xl-lg {
+                    margin-top: 80px;
+                }
+            }
+
+            .description {
+                font-size: 13px;
+                line-height: 1.9rem;
+                
+            }
+
+            .btn {
+                text-align: center;
+                margin-top: 35px;
+                height: 80px;
+                width: 240px;
+                line-height: 90px;
+                color: $color-white;
+                background-color: $color-dark-blue;
+                transition: 0.5s;
+                cursor: pointer;
+
+                @include lg-md {
+                    
+                    margin: 0 auto;
+                }
+            }
+
+            .btn:hover {
+                color: $color-dark-blue;
+                background-color: $color-yellow;
+            }
+        }
+    }
+
+    .offers-wrapper:nth-child(2) {
+        flex-direction: row-reverse;
+
+        @include lg-md {
+            flex-direction: row;
+        }
+    }
 }

@@ -1,15 +1,13 @@
 .header {
-    
 
     .header-navbar {
         display: flex;
         justify-content: space-between;
-        margin-top: 25px;
-        margin-bottom: 28px;
+        margin-top: 24px;
+        margin-bottom: 29px;
         
         &__name {
             margin-left: 5px;
-            
         }
 
         &__links {
@@ -18,17 +16,24 @@
             .links {
                 display: flex;
                 margin-left: 50px;
+
+                @include lg-md {
+                    margin-left: 30px;
+                }
                 
                 .link {
-                    // margin: 0 10px;
                     padding: 0 26px 0 20px;
                     height: 40px;
                     font-size: 13px;
-                    // font-family: "Montserrat";
                     line-height: 40px;
                     border-radius: 5px;
                     transition: 0.5s;
                     cursor: pointer;
+
+                    @include lg-md {
+                        padding: 0 13px 0 10px;
+                        font-size: 12px;
+                    }
                 }
                 
                 .link:hover {
@@ -39,8 +44,113 @@
     }
 
     .header-homepage {
-        height: 200px;
+        position: relative;
+        height: 630px;
         width: 100%;
-        background-color: $color-gray;
+        background-color: $color-gray-white;
+
+        @include lg-md {
+            height: 550px;
+        }
+
+        &__form {
+
+            .form-title {
+                padding-top: 155px;
+
+                @include lg-md {
+                    padding-top: 75px;
+                }
+
+                .title {
+                    display: block;
+                    font-size: 58px;
+                }
+            }
+
+            .search {
+                margin-top: 60px;
+                padding: 0 0 0 55px;
+                margin-left: 5px;
+                height: 70px;
+                width: 305px;
+                outline: none;
+                border: none;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                background-image: url(../img/search.png);
+                background-repeat: no-repeat;
+                background-position: 24px 28px;
+            }
+
+            .btn {
+                margin-left: -4px;
+                padding: 0;
+                height: 70px;
+                width: 115px;
+                border: none;
+                outline: none;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                background-color: $color-yellow;
+                cursor: pointer;  
+            }
+        }
+
+        &__wrapper {
+            display: flex;
+            justify-content: flex-end;
+            
+            .contact {
+                text-align: end;
+                margin-top: 123px;
+                padding-right: 55px;
+                height: 80px;
+                width: 240px;
+                font-size: 17px;
+                line-height: 80px;
+                letter-spacing: .1rem;
+                background-color: $color-yellow;
+                background-image: url(../img/phone.png);
+                background-repeat: no-repeat;
+                background-position: 47px 29px;
+            }
+
+            .map {
+                text-align: end;
+                margin-top: 123px;
+                padding-right: 55px;
+                height: 80px;
+                width: 240px;
+                font-size: 17px;
+                line-height: 80px;
+                background-color: $color-yellow;
+                background-image: url(../img/pointer.png);
+                background-repeat: no-repeat;
+                background-position: 12px 29px;
+            }
+        }
+
+        .scroll {
+            position: absolute;
+            height: 12px;
+            left: -27px;
+            bottom: 70px;
+            font-size: 12px;
+            color: $color-gray;
+            transform: rotate(270deg);
+        }
+
+        .scroll::after {
+            content: "";
+            position: absolute;
+            height: 30px;
+            width: 15px;
+            top: -5px;
+            left: -30px;
+            background-image: url(../img/arrow.png);
+            background-repeat: no-repeat;
+            transform: rotate(90deg); 
+        }
     }
 }

@@ -1,3 +1,157 @@
 .appartments {
+    margin-top: 60px;
+    background-color: lighten($color: $color-gray, $amount: 30%);
 
+    @include lg-md {
+        margin-top: 30px;
+    }
+
+    .appartments-labels {
+        padding-top: 25px;
+        padding-left: 5px;
+        margin-top: 55px;
+        margin-bottom: 70px;
+        width: 500px;
+
+        @include lg-md {
+            padding-top: 15px;
+            margin-bottom: 35px;
+        }
+    }
+
+    .appartments-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        &__wrapper {
+            margin: 10px;
+            background-color: $color-white;
+            cursor: pointer;
+
+            .image {
+                height: 380px;
+                width: 350px;
+                background-color: $color-gray-white;
+            }
+    
+            .descriptions {
+                margin: 30px 25px;
+                font-size: 15px;
+            }
+    
+            .wrapper {
+                margin: 0 25px 35px 25px;
+                display: flex;
+                justify-content: space-between;
+
+                .prise {
+                    font-size: 18px;
+                    color: $color-yellow;
+                }
+    
+                .wrapper-icons {
+                    display: flex;
+                    justify-content: flex-end;
+                    
+
+                    .iconBa {
+                        position: relative;
+                        font-size: 13px;
+                        margin-right: 50px; 
+                        color: darken($color: $color-gray, $amount: 15%)
+                    }
+
+                    .iconBa::before {
+                        content: "";
+                        position: absolute;
+                        height: 15px;
+                        width: 20px;
+                        right: 35px;
+                        top: 4px;
+                        background-image: url(../img/bath.png);
+                        background-repeat: no-repeat;
+                    }
+
+                    .iconBd {
+                        position: relative;
+                        font-size: 13px;  
+                        color: darken($color: $color-gray, $amount: 15%)    
+                    }
+
+                    .iconBd::before {
+                        content: "";
+                        position: absolute;
+                        height: 15px;
+                        width: 20px;
+                        right: 40px;
+                        top: 4px;
+                        background-image: url(../img/bed.png);
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+    }
+
+    .appartments-search {
+        display: flex;
+        padding-bottom: 87px;
+
+        @include xl-lg {
+            justify-content: center;
+        }
+
+        @include lg-md {
+            justify-content: center;
+        }
+
+        .search {
+            margin-top: 60px;
+            padding: 0 0 0 55px;
+            margin-left: 5px;
+            height: 70px;
+            width: 305px;
+            outline: none;
+            border: none;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            background-image: url(../img/search.png);
+            background-repeat: no-repeat;
+            background-position: 24px 28px;
+
+            @include lg-md {
+                width: 290px;
+            }
+        }
+
+        .btn {
+            margin-left: -4px;
+            padding: 0;
+            height: 70px;
+            width: 115px;
+            border: none;
+            outline: none;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background-color: $color-yellow;
+            cursor: pointer; 
+        }
+
+        .appartments-search__moreAppartments {
+            text-align: center;
+            margin-top: 60px;
+            margin-left: 40px;
+            height: 70px;
+            width: 250px;
+            line-height: 70px;
+            border-radius: 5px;
+            background-color: $color-white;
+            cursor: pointer;
+
+            @include lg-md {
+                margin-left: 30px;
+            }
+        }
+    }
 }

@@ -1,13 +1,20 @@
-$color-blue: #389EF2;
-$color-gray-white: #4D5255;
-$color-gray: #19232A;
+$color-dark-blue: #1F373D;
+$color-gray-white: #96BECE;
+$color-gray: #9A99AA;
 $color-black: #010B13;
 $color-white: #FFFFFF;
-$color-yellow: #FFFF00;
+$color-yellow: #FFCC01;
+
+$font-size: 13px;
 
 $xl: 1280px;
 $lg: 1024px;
 $md: 768px;
 $sm: 576px;
 $xs: 360px;
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-SemiBold.ttf") format("opentype");
+}
 

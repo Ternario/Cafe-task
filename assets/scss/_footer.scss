@@ -1,3 +1,102 @@
 .footer {
+    position: relative;
+    padding: 57px 5px 0 5px;
+    background-color: $color-dark-blue;
     
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 60px;
+
+        &__label {
+            
+            .label {
+                margin: 0;
+                color: $color-white;
+
+                @include lg-md {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        &__btn {
+            margin-top: 20px;
+            cursor: pointer;
+
+            .description {
+                padding-left: 30px;
+                height: 70px;
+                width: 445px;
+                line-height: 70px;
+                color: $color-gray;
+                background-color: $color-white;
+                background-image: url(../img/arrow2.png);
+                background-repeat: no-repeat;
+                background-position: 410px 27px;
+            }
+        }
+    }
+
+    .footer-info {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 75px;
+        padding-bottom: 80px;
+
+        @include lg-md {
+            padding-top: 35px;
+            padding-bottom: 30px;  
+        }
+
+        &__logo {
+
+            .title {
+                margin-bottom: 70px;
+                font-size: 25px;
+                color: $color-white;
+
+                @include lg-md {
+                    margin-bottom: 35px;
+                }
+            }
+
+            .info {
+                width: 150px;
+                font-size: 14px;
+                color: $color-white;
+                line-height: 1.5rem;
+            }
+        }
+
+        &__blocks {
+            display: flex;
+
+            .block {
+                margin-right: 90px;
+
+                .block-title {
+                    margin-bottom: 35px;
+                    font-size: 13px;
+                    color: $color-gray;
+                }
+
+                .block-name {
+                    margin-bottom: 25px;
+                    font-size: 13px;
+                    color: $color-white;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 210px;
+    background-color: $color-white;
 }
