@@ -21,7 +21,6 @@
 
         @include lg-md {
             margin-bottom: 60px;
-            flex-wrap: wrap;
         }
 
         &__block {
@@ -48,7 +47,7 @@
                 transition: 0.5s;
 
                 @include lg-md {
-                    margin-left: 35px;
+                    margin-left: 20px;
                     font-size: 14px;
                 }
             }
@@ -62,7 +61,8 @@
                 transition: 0.5s;
 
                 @include lg-md {
-                    margin-left: 55px;
+                    margin-left: 35px;
+                    width: 180px;
                     font-size: 12px;
                 }
             }
@@ -76,7 +76,7 @@
                 transition: 0.5s;
 
                 @include lg-md {
-                    margin-left: 55px;
+                    margin-left: 35px;
                     font-size: 12px;
                 }
             }

@@ -10,6 +10,8 @@
     <title>Homepage</title>
 
     <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-1.8.1/slick/slick-theme.css"/>
 
 </head>
 
@@ -62,25 +64,25 @@
         <div class="statistics-counters">
             <div class="statistics-counters__wrapper">
                 <div>
-                    <div class="number">748</div>
+                    <div id="first" class="number"></div>
                     <div class="name">Appartments</div>
                 </div>
             </div>
             <div class="statistics-counters__wrapper">
                 <div>
-                    <div class="number">3854</div>
+                    <div id="second" class="number"></div>
                     <div class="name">Cliens</div>
                 </div>
             </div>
             <div class="statistics-counters__wrapper">
                 <div>
-                    <div class="number">24</div>
+                    <div id="third" class="number"></div>
                     <div class="name">Employees</div>
                 </div>
             </div>
             <div class="statistics-counters__wrapper">
                 <div>
-                    <div class="number">14</div>
+                    <div id="fourth" class="number"></div>
                     <div class="name">Awards</div>
                 </div>
             </div>
@@ -224,7 +226,43 @@
             <h2 class="label">Meet Our Agents</h2>
             <div class="description">In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob or whatever comes first agile at the end of the day.</div>
         </div>
-        <div class="agents-cards">
+        <div class="agents-cards responsive">
+            <div class="agents-cards__wrapper">
+                <div class="image"></div>
+                <div class="descriptions">Agent</div>
+                <div class="wrapper">
+                    <div class="name">Mr. Luke Skywalker</div>
+                    <div class="wrapper-icons">
+                        <div class="iconFirst"></div>
+                        <div class="iconSecond"></div>
+                        <div class="iconThird"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="agents-cards__wrapper">
+                <div class="image"></div>
+                <div class="descriptions">Agent</div>
+                <div class="wrapper">
+                    <div class="name">Mr. Luke Skywalker</div>
+                    <div class="wrapper-icons">
+                        <div class="iconFirst"></div>
+                        <div class="iconSecond"></div>
+                        <div class="iconThird"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="agents-cards__wrapper">
+                <div class="image"></div>
+                <div class="descriptions">Agent</div>
+                <div class="wrapper">
+                    <div class="name">Mr. Luke Skywalker</div>
+                    <div class="wrapper-icons">
+                        <div class="iconFirst"></div>
+                        <div class="iconSecond"></div>
+                        <div class="iconThird"></div>
+                    </div>
+                </div>
+            </div>
             <div class="agents-cards__wrapper">
                 <div class="image"></div>
                 <div class="descriptions">Agent</div>
@@ -262,6 +300,7 @@
                 </div>
             </div>
         </div>
+
     </div>
     
     <div class="offers">
@@ -347,8 +386,12 @@
         </div>
     </div>
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
-<script src="assets/js/main.js"></script>
+
 
 </html>

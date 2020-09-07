@@ -1,6 +1,7 @@
 .agents {
     padding-bottom: 85px;
     padding-left: 5px;
+    padding-right: 5px;
     background-color: lighten($color: $color-gray, $amount: 30%);
 
     @include lg-md {
@@ -48,10 +49,17 @@
             margin: 10px;
             background-color: $color-white;
 
+            @include lg-md {
+                margin: 7px;
+            }
+
             .image {
                 height: 380px;
-                width: 350px;
                 background-color: $color-gray;
+
+                @include lg-md {
+                    height: 320px;
+                }
             }
 
             .descriptions {

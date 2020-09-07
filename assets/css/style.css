@@ -589,6 +589,7 @@ p {
 .agents {
   padding-bottom: 85px;
   padding-left: 5px;
+  padding-right: 5px;
   background-color: #edecf0;
 }
 
@@ -617,7 +618,6 @@ p {
 
 .agents .agents-cards__wrapper .image {
   height: 380px;
-  width: 350px;
   background-color: #9A99AA;
 }
 
@@ -877,7 +877,7 @@ p {
   background-color: #FFFFFF;
 }
 
-@media (max-width: 1279.8px) and (min-width: 1024px) {
+@media (max-width: 1110.8px) and (min-width: 1024px) {
   .statistics .statistics-counters {
     width: 50%;
   }
@@ -970,20 +970,18 @@ p {
   }
   .slider .slider-wrapper {
     margin-bottom: 60px;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
   }
   .slider .slider-wrapper__block .title {
-    margin-left: 35px;
+    margin-left: 20px;
     font-size: 14px;
   }
   .slider .slider-wrapper__block .description {
-    margin-left: 55px;
+    margin-left: 35px;
+    width: 180px;
     font-size: 12px;
   }
   .slider .slider-wrapper__block .link {
-    margin-left: 55px;
+    margin-left: 35px;
     font-size: 12px;
   }
   .services .services-descriptions .description {
@@ -1016,6 +1014,12 @@ p {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+  }
+  .agents .agents-cards__wrapper {
+    margin: 7px;
+  }
+  .agents .agents-cards__wrapper .image {
+    height: 320px;
   }
   .offers .offers-wrapper {
     display: block;
