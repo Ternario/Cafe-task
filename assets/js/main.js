@@ -36,40 +36,20 @@ let second = document.querySelector("#second");
 let third = document.querySelector("#third");
 let fourth = document.querySelector("#fourth");
 
-first.innerHTML = 748;
-second.innerHTML = 3854;
-third.innerHTML = 24;
-fourth.innerHTML = 14;
+let counter = (num, elem) => {
+    let count = 0
 
-let counterFirst = setInterval(function() {
-    first.innerHTML++
+    setInterval(()=> {
+      if(count > num) {
+        return
+      } else {
+        elem.innerHTML = count
+        count++
+      }  
+    }, 100)
+}
 
-    if(first.innerHTML >= 770) {
-        clearInterval(counterFirst);
-    }
-}, 1000)
-
-let counterSecond = setInterval(function() {
-    second.innerHTML++
-
-    if(second.innerHTML >= 3900) {
-        clearInterval(counterSecond);
-    }
-}, 1000)
-
-let counterThird = setInterval(function() {
-    third.innerHTML++
-
-    if(third.innerHTML >= 50) {
-        clearInterval(counterThird);
-    }
-}, 1000)
-
-let counterFourth = setInterval(function() {
-    fourth.innerHTML++
-
-    if(fourth.innerHTML >= 25) {
-        clearInterval(counterFourth);
-    }
-}, 1000)
-  
+counter(748, first)
+counter(3854, second)
+counter(24, third)
+counter(14, fourth)
